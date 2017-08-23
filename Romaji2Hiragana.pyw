@@ -37,12 +37,11 @@ class Root(tk.Tk):
         super().__init__()
         self.title("Romaji2Hiragana")
         self.geometry("800x600")
-        self.iconbitmap("icon.ico")
-        #self.configure(background='lightgrey')
+        self.iconbitmap("icon.ico") # Remove this line if you didn't download the icon file
 
-        label1 = tk.Label(self, text="Romaji :",pady=15,font=("Times New Roman", 18))#,background='lightgrey')
+        label1 = tk.Label(self, text="Romaji :",pady=15,font=("Times New Roman", 18))
         label1.grid(row=0,column=0)
-        label2 = tk.Label(self, text="Hiragana :",pady=15,font=("Times New Roman", 18))#,background='lightgrey')
+        label2 = tk.Label(self, text="Hiragana :",pady=15,font=("Times New Roman", 18))
         label2.grid(row=0,column=1)
 
         self.romajiText = tk.Text(self,height=18,width=30)
