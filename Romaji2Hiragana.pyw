@@ -37,7 +37,6 @@ class Root(tk.Tk):
         super().__init__()
         self.title("Romaji2Hiragana")
         self.geometry("800x600")
-        self.iconbitmap("icon.ico") # Remove this line if you didn't download the icon file
 
         label1 = tk.Label(self, text="Romaji :",pady=15,font=("Times New Roman", 18))
         label1.grid(row=0,column=0)
